@@ -1,8 +1,11 @@
-total = 0
-print('Вводите цены; для остановки введите -1.')
-price = float(input())
-while price > 0:
-    total = total + price  # можно заменить на аналогичную запись
-    # total += price  234242342334234234234234567
-    price = float(input())
-print('Общая стоимость равна', total)
+a = int(input())
+k = 0
+t = a
+while a != 0:
+    if a > t:
+        t = a
+        k = 0
+    if a == t:
+        k += 1
+    a = int(input())
+print(k)
