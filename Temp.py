@@ -1,11 +1,6 @@
-a = int(input())
-k = 0
-t = a
-while a != 0:
-    if a > t:
-        t = a
-        k = 0
-    if a == t:
-        k += 1
-    a = int(input())
-print(k)
+stolen = int(input())
+while stolen > 0:
+    take = int(input())
+    if 1 <= take <= 3 and take <= stolen:
+        stolen -= take
+    print(stolen)
